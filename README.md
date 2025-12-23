@@ -1,36 +1,82 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Alfasoft Project
 
-## Getting Started
+Este es el repositorio oficial para el proyecto Alfasoft, desarrollado con [Next.js](https://nextjs.org).
 
-First, run the development server:
+## 🚀 Comenzando
+
+Estas instrucciones te permitirán obtener una copia del proyecto en funcionamiento en tu máquina local para propósitos de desarrollo y pruebas.
+
+### 📋 Prerrequisitos
+
+Necesitas tener instalado lo siguiente:
+*   [Node.js](https://nodejs.org/) (Versión 18 o superior recomendada)
+*   [Git](https://git-scm.com/)
+
+### 🔧 Instalación
+
+1.  **Clonar el repositorio**:
+    ```bash
+    git clone https://github.com/rtipiani/alfasoft.git
+    cd alfasoft
+    ```
+
+2.  **Instalar dependencias**:
+    ```bash
+    npm install
+    ```
+
+3.  **Configurar variables de entorno**:
+    Crea un archivo `.env.local` en la raíz del proyecto (puedes copiar el `.env.example` si existe) y añade las claves necesarias.
+
+### ⚙️ Ejecutar localmente
+
+Para iniciar el servidor de desarrollo:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Abre [http://localhost:3000](http://localhost:3000) en tu navegador para ver la aplicación.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🤝 Colaboración
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Para trabajar en equipo de manera ordenada, seguimos este flujo:
 
-## Learn More
+1.  **Actualizar tu rama local**:
+    Siempre antes de empezar, descarga los últimos cambios:
+    ```bash
+    git pull origin main
+    ```
 
-To learn more about Next.js, take a look at the following resources:
+2.  **Crear una nueva rama (Branch)**:
+    Nunca trabajes directo en `main`. Crea una rama con un nombre descriptivo para tu tarea:
+    ```bash
+    git checkout -b funcionalidad-nueva
+    # o
+    git checkout -b correccion-error-login
+    ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+3.  **Guardar cambios**:
+    ```bash
+    git add .
+    git commit -m "Descripción clara de lo que hiciste"
+    ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+4.  **Subir cambios**:
+    ```bash
+    git push origin nombre-de-tu-rama
+    ```
 
-## Deploy on Vercel
+5.  **Solicitar integración (Pull Request)**:
+    Ve a GitHub y crea un "Pull Request" comparando tu rama con `main` para que el administrador revise y acepte los cambios.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 📦 Construcción para Producción
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Para crear la versión optimizada para producción:
+
+```bash
+npm run build
+```
+
+---
+Desarrollado por [rtipiani](https://github.com/rtipiani)
